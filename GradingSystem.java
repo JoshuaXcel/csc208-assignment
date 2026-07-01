@@ -1,19 +1,12 @@
 /*
  * CSC 208 Assignment - Object-Oriented Programming
- * Name: Ngullah Mudana Joshua
- * Matric Number: CSC/24/0000
+ * Name: Ojo Temitope Emmanuel
+ * Matric Number: CSC/24/9139
  *
- * Description:
- * This program models a simple student grading system using the principles
- * of Object-Oriented Programming (OOP). It records each student's name and
- * the courses they took, including the course units and scores. It then
- * computes the corresponding letter grade and grade point for each course,
- * and calculates the student's cumulative GPA using the standard formula:
- *
- *     GPA = SUM(Grade Point × Course Unit) / SUM(Course Units)
- *
- * It also exports all the results to a CSV file
- * (grading_report.csv), which can be opened directly in Microsoft Excel/Google Sheets.
+ * This program implements a grading system for students taking the course "CSC 208 - Object-Oriented Programming".
+ * It allows for the input of student names, matriculation numbers, and their respective courses with scores.
+ * The program calculates letter grades, grade points, and cumulative GPAs based on the department grading scale.
+ * It also generates a report that can be printed to the console and saved as a CSV file.
  */
 
 import java.io.FileWriter;
@@ -89,37 +82,36 @@ public class GradingSystem {
 
         List<Student> students = new ArrayList<>();
 
-        // ---------- Student(Myself) ----------
-        Student s1 = new Student("Ngullah Mudana Joshua", "CSC/24/0000");
+        // ---------- Student's name----------
+        Student s1 = new Student("Ojo Temitope Emmanuel", "CSC/24/9139");
         s1.addCourse("CSC 202 - Comparative Programming Language", 3, 80);
         s1.addCourse("CSC 204 - Assembly Language Programming", 3, 75);
         s1.addCourse("CSC 208 - Object-Oriented Programming", 2, 78);
         s1.addCourse("STA 112 - Statistics for Computing", 3, 74);
         students.add(s1);
 
-        //---------- Pseudo names (Just randonm names ) ----------
-        Student s2 = new Student("Niyi Adeniyi Esosa", "CYS/24/9001");
+        Student s2 = new Student("Temmy Adeniyi Ademola", "SEN/24/9001");
         s2.addCourse("CSC 202 - Comparative Programming Language", 4, 68);
         s2.addCourse("CSC 204 - Assembly Language Programming", 3, 62);
         s2.addCourse("CSC 208 - Object-Oriented Programming", 2, 48);
         s2.addCourse("STA 112 - Statistics for Computing", 3, 71);
         students.add(s2);
 
-        Student s3 = new Student("Baks Tunde Bakare", "CSC/24/9002");
+        Student s3 = new Student("Ayo Ayodeji DaVinci", "CSC/24/9002");
         s3.addCourse("CSC 202 - Comparative Programming Language", 3, 78);
         s3.addCourse("CSC 204 - Assembly Language Programming", 3, 65);
         s3.addCourse("CSC 208 - Object-Oriented Programming", 2, 54);
         s3.addCourse("STA 112 - Statistics for Computing", 3, 46);
         students.add(s3);
 
-        Student s4 = new Student("Ahmodu Ahmed Bulaba", "BAT/24/0001");
+        Student s4 = new Student("Adeola Akindele", "CYS/24/0001");
         s4.addCourse("CSC 202 - Comparative Programming Language", 3, 22);
         s4.addCourse("CSC 204 - Assembly Language Programming", 3, 38);
         s4.addCourse("CSC 208 - Object-Oriented Programming", 2, 46);
         s4.addCourse("STA 112 - Statistics for Computing", 3, 51);
         students.add(s4);
 
-        Student s5 = new Student("Remi Oluremi Balabulu", "RAT/24/0002");
+        Student s5 = new Student("Muhammad Sani", "IFS/24/0002");
         s5.addCourse("CSC 202 - Comparative Programming Language", 3, 58);
         s5.addCourse("CSC 204 - Assembly Language Programming", 3, 75);
         s5.addCourse("CSC 208 - Object-Oriented Programming", 2, 26);
